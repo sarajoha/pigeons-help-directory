@@ -1,0 +1,70 @@
+vets/rehab:
+# US links https://www.humanesociety.org/resources/how-find-wildlife-rehabilitator
+# https://www.pigeonrescue.org/resources/some-pigeon-dove-friendly-rescues-in-the-us/
+# https://www.misamigaslaspalomas.com/2011/07/6-listado-de-centros-de-rehabilitacion.html
+# https://mediambient.gva.es/es/web/cidam/centros-de-recuperacion
+sanctuaries:
+  # This is a template for sactuaries
+  # - name: Name of the sactuary
+  #   website: https://example.com/
+  #   location: City and Country where the sactuary is located
+  #   geo:
+  #     - country: Country Name (see list below for spelling)
+  #       lat: Latitude (see list below for format)
+  #       long: Longitude
+  - name:
+    website: https://www.facebook.com/SantuarioLaPalomaTriste/?locale=es_ES
+    location: Madrid, Spain
+    geo:
+      - country: SPAIN
+        lat: 39.9724404
+        long: -105.1150443
+  - name: Mis Amigas Las Palomas
+    link: https://www.misamigaslaspalomas.com/2011/07/6-listado-de-centros-de-rehabilitacion.html
+    location: Madrid, Spain
+    geo:
+      - country: SPA
+        lat: 39.9724404 # adjust
+        long: -105.1150443
+
+rescue:
+  - name: What to do if you find a pigeon
+    link: https://www.pigeonrescue.org/faqs-2/what-to-do-if-you-find-a-pigeon-or-dove/
+  - name: How to catch a pigeon in need of rescue
+    link: https://www.pigeonrescue.org/2018/09/11/how-to-catch-a-pigeon-or-dove-in-need-of-rescue/
+  # https://www.rspca.org.uk/adviceandwelfare/wildlife/birds/injured
+care:
+  - name: Basic Steps to Saving the life of a Pigeon
+    link: https://www.pigeons.biz/threads/basic-steps-to-saving-the-life-of-a-pigeon-or-dove.11265/
+  - name: Basic Factors to Save a Birds life
+    link: https://www.pigeons.biz/threads/most-important-basic-factors-to-save-a-birds-life.8819/
+  - name: How to take care of a rescued pigeon
+    link: https://www.pigeonrescue.org/2015/10/01/how-to-take-care-of-a-rescued-pigeon-for-newbies/
+  - name: How to untangle strings
+    link: https://www.pigeons.biz/threads/most-important-basic-factors-to-save-a-birds-life.8819/
+communities:
+  # This is a template for online communities
+  # - name: Name of community
+  #   website: https://example.com/
+  #   description:
+  #   language:
+  - name: Pigeon Reddit
+    website: https://www.reddit.com/r/pigeon/
+    description: Reddit's community of pigeon lovers.
+    language: eng
+  - name: Palomacy
+    website: https://www.facebook.com/groups/Palomacy
+    description: Reddit's community of pigeon lovers.
+    language: eng
+  - name: Canada's Pigeon and Dove Rescue Adoption and Appreciation Group
+    website: https://www.facebook.com/groups/178727613578200/
+    description: Reddit's community of pigeon lovers.
+    language: eng
+  - name: Mis Amigas las Palomas
+    website: https://www.instagram.com/mis_amigas_las_palomas/
+    description: Reddit's community of pigeon lovers.
+    language: spa
+  - name: Club de Apreciacion de Palomas
+    website: https://www.instagram.com/clubdeapreciaciondepalomas/
+    description:
+    language: spa
