@@ -1,10 +1,10 @@
 # Resources to help Pigeons
 
-A curated list of rehabs, vet, sactuaries, NGOS and social media accounts that help or appreciate pigeons.
+A curated list of rehab centers, avian veterinaries, sanctuaries and groups dedicated to help pigeons.
 
--- organize per country and category
--- how to rescue or take care of pigeons
--- directory of vets and rehabs per country
+- [How to help a pigeon]({{toc_link("How to rescue a pigeon")}})
+- [Vets, Rehab centers and Sanctuaries]({{toc_link("Avian Veterinaries, Rehab Centers and Sanctuaries")}})
+- [Communities]({{toc_link("Online communities")}})
 
 ## How to rescue a pigeon
 
@@ -16,4 +16,39 @@ A curated list of rehabs, vet, sactuaries, NGOS and social media accounts that h
 
 {% for resource in care -%}
 - [{{resource.name}}]({{resource.link}})
+{% endfor %}
+
+## Avian Veterinaries, Rehab Centers and Sanctuaries
+
+{% for country in professional_centers.keys() -%}
+- [{{country}}]({{toc_link(country)}})
+{% endfor -%}
+
+{% for country, centersByCountry in professional_centers.items() -%}
+### {{country}}
+
+{% for type, centers in centersByCountry.items() -%}
+#### {{type}}
+
+| center | city |
+| - | - |
+{% for center in centers -%}
+| [{{center.name}}]({{center.website}}) | {{center.city}} |
+{% endfor %}
+
+{% endfor %}
+
+{% endfor %}
+
+## Online communities
+
+{% for language, groupByLanguage in communities.items() -%}
+### {{language}}
+
+| community | platform |
+| - | - |
+{% for group in groupByLanguage -%}
+| [{{group.name}}]({{group.website}}) | {{group.platform}} |
+{% endfor %}
+
 {% endfor %}

@@ -1,31 +1,33 @@
-vets/rehab:
-# US links https://www.humanesociety.org/resources/how-find-wildlife-rehabilitator
-# https://www.pigeonrescue.org/resources/some-pigeon-dove-friendly-rescues-in-the-us/
-# https://www.misamigaslaspalomas.com/2011/07/6-listado-de-centros-de-rehabilitacion.html
-# https://mediambient.gva.es/es/web/cidam/centros-de-recuperacion
-sanctuaries:
-  # This is a template for sactuaries
-  # - name: Name of the sactuary
+professional_help_centers:
+  # US links https://www.humanesociety.org/resources/how-find-wildlife-rehabilitator
+  # https://www.pigeonrescue.org/resources/some-pigeon-dove-friendly-rescues-in-the-us/
+  # https://www.misamigaslaspalomas.com/2011/07/6-listado-de-centros-de-rehabilitacion.html
+  # https://mediambient.gva.es/es/web/cidam/centros-de-recuperacion
+  # This is a template for vets, avian veterinaries and sanctuaries
+  # - name: Name of the place to get professional help
   #   website: https://example.com/
   #   location: City and Country where the sactuary is located
+  #   type: Vet, Rehab Center or Sanctuarie
   #   geo:
   #     - country: Country Name (see list below for spelling)
   #       lat: Latitude (see list below for format)
   #       long: Longitude
-  - name:
+  - name: Santuario La Paloma Triste
     website: https://www.facebook.com/SantuarioLaPalomaTriste/?locale=es_ES
-    location: Madrid, Spain
+    type: sanctuary
+    city: Madrid
     geo:
-      - country: SPAIN
-        lat: 39.9724404
-        long: -105.1150443
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
   - name: Mis Amigas Las Palomas
     link: https://www.misamigaslaspalomas.com/2011/07/6-listado-de-centros-de-rehabilitacion.html
-    location: Madrid, Spain
+    type: sanctuary
+    city: Madrid
     geo:
-      - country: SPA
-        lat: 39.9724404 # adjust
-        long: -105.1150443
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
 
 rescue:
   - name: What to do if you find a pigeon
@@ -42,29 +44,36 @@ care:
     link: https://www.pigeonrescue.org/2015/10/01/how-to-take-care-of-a-rescued-pigeon-for-newbies/
   - name: How to untangle strings
     link: https://www.pigeons.biz/threads/most-important-basic-factors-to-save-a-birds-life.8819/
+
 communities:
   # This is a template for online communities
   # - name: Name of community
   #   website: https://example.com/
   #   description:
-  #   language:
+  #   platform: Platform where the group is in (reddit, instagram, facebook)
+  #   language: Main language of the community
   - name: Pigeon Reddit
     website: https://www.reddit.com/r/pigeon/
     description: Reddit's community of pigeon lovers.
-    language: eng
+    platform: reddit
+    language: English
   - name: Palomacy
     website: https://www.facebook.com/groups/Palomacy
     description: Reddit's community of pigeon lovers.
-    language: eng
+    platform: facebook
+    language: English
   - name: Canada's Pigeon and Dove Rescue Adoption and Appreciation Group
     website: https://www.facebook.com/groups/178727613578200/
     description: Reddit's community of pigeon lovers.
-    language: eng
+    platform: facebook
+    language: English
   - name: Mis Amigas las Palomas
     website: https://www.instagram.com/mis_amigas_las_palomas/
     description: Reddit's community of pigeon lovers.
-    language: spa
+    platform: instagram
+    language: Spanish
   - name: Club de Apreciacion de Palomas
     website: https://www.instagram.com/clubdeapreciaciondepalomas/
     description:
-    language: spa
+    platform: instagram
+    language: Spanish
