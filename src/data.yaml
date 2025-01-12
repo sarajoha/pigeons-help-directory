@@ -21,7 +21,7 @@ professional_help_centers:
         lat: 40.416775
         long: -3.703790
   - name: Mis Amigas Las Palomas
-    link: https://www.misamigaslaspalomas.com/2011/07/6-listado-de-centros-de-rehabilitacion.html
+    website: https://www.misamigaslaspalomas.com/2011/07/6-listado-de-centros-de-rehabilitacion.html
     type: sanctuary
     city: Madrid
     geo:

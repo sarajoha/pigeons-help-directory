@@ -30,7 +30,7 @@ A curated list of rehab centers, avian veterinaries, sanctuaries and groups dedi
 | center | city |
 | - | - |
 | [Santuario La Paloma Triste](https://www.facebook.com/SantuarioLaPalomaTriste/?locale=es_ES) | Madrid |
-| [Mis Amigas Las Palomas]() | Madrid |
+| [Mis Amigas Las Palomas](https://www.misamigaslaspalomas.com/2011/07/6-listado-de-centros-de-rehabilitacion.html) | Madrid |
 
 
 
