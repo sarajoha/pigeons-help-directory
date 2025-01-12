@@ -56,3 +56,7 @@ A curated list of rehab centers, avian veterinaries, sanctuaries and groups dedi
 | [Club de Apreciacion de Palomas](https://www.instagram.com/clubdeapreciaciondepalomas/) | instagram |
 
 
+
+
+---
+Shoutout to [pogopaule](https://github.com/pogopaule), whose amazing repo [awesome-sustainability-jobs](https://github.com/pogopaule/awesome-sustainability-jobs) served as both inspiration and the base structure for this one :sparkles:

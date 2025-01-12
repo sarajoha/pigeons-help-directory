@@ -52,3 +52,6 @@ A curated list of rehab centers, avian veterinaries, sanctuaries and groups dedi
 {% endfor %}
 
 {% endfor %}
+
+---
+Shoutout to [pogopaule](https://github.com/pogopaule), whose amazing repo [awesome-sustainability-jobs](https://github.com/pogopaule/awesome-sustainability-jobs) served as both inspiration and the base structure for this one :sparkles:
