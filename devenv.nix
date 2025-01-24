@@ -16,10 +16,13 @@
       requirements = ''
         requests
         oyaml
+        bs4
+        pandas
         # selenium
         # pytest
         pyyaml
         jinja2
+        unidecode
       '';
     };
   };

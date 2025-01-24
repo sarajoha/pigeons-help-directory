@@ -1,7 +1,6 @@
 professional_help_centers:
   # US links https://www.humanesociety.org/resources/how-find-wildlife-rehabilitator
   # https://www.pigeonrescue.org/resources/some-pigeon-dove-friendly-rescues-in-the-us/
-  # https://www.misamigaslaspalomas.com/2011/07/6-listado-de-centros-de-rehabilitacion.html
   # https://mediambient.gva.es/es/web/cidam/centros-de-recuperacion
   # This is a template for vets, avian veterinaries and sanctuaries
   # - name: Name of the place to get professional help
@@ -28,7 +27,14 @@ professional_help_centers:
       - country: Spain
         lat: 40.416775
         long: -3.703790
-
+- name: Centro de Recuperación de Fauna Silvestre de GREFA
+    website: https://www.facebook.com/SantuarioLaPalomaTriste/?locale=es_ES
+    type: sanctuary
+    city: Madrid
+    geo:
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
 rescue:
   - name: What to do if you find a pigeon
     link: https://www.pigeonrescue.org/faqs-2/what-to-do-if-you-find-a-pigeon-or-dove/
