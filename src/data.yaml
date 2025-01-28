@@ -123,6 +123,126 @@ professional_help_centers:
       - country: Spain
         lat: 40.416775
         long: -3.703790
+  - name: Centro de Recuperación de Animales Silvestres "Los Guindales"
+    website:
+    email: alaaleol@jcyl.es
+    telephone: +34 947461189
+    type: rehab center
+    city: Burgos
+    geo:
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
+  - name: Centro de Recuperación de Especies Protegidas "Las Dunas"
+    website:
+    email: teresa.tarazona@sajcyl.es
+    telephone: +34 923296026
+    type: rehab center
+    city: Salamanca
+    geo:
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
+  - name: Centro de Recuperación de Animales Salvajes "Los Lavaderos"
+    website:
+    email: cacharrocaccarel@jcyl.es
+    telephone: +34 921433340
+    type: rehab center
+    city: Segovia
+    geo:
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
+  - name: Centro de Recuperación de Aves de Valladolid
+    website:
+    email: diepozma@jcyl.es
+    telephone: +34 983249862
+    type: rehab center
+    city: Valladolid
+    geo:
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
+  - name: Centro de Recepción de Fauna de Avila
+    website:
+    email: nicolasgonzalez@auv.jcyl.es
+    telephone: +34 920355001
+    type: rehab center
+    city: Avila
+    geo:
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
+  - name: Centro de Recepción de Fauna de Valsemana. León
+    website:
+    email: juan-jose.martinez@le.jcyl.es
+    telephone: +34 987694219
+    type: rehab center
+    city: Leon
+    geo:
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
+  - name: Centro de Recuperación Fauna Silvestre de Zamora
+    website:
+    email:
+    telephone: +34 980510361
+    type: rehab center
+    city: Zamora
+    geo:
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
+  - name: Centro de Recuperación de Fauna Silvestre y Educación Ambiental "Los Hornos"
+    website:
+    email: crhornos@aym.juntaex.es
+    telephone: +34 900351858 / 927200170 / 927200218
+    type: rehab center
+    city: Caceres
+    geo:
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
+  - name: Centro de Cría de Aguilucho Cenizo de AMUS
+    website:
+    email: amus100@hotmail.com
+    telephone: +34 924520428
+    type: rehab center
+    city: Badajoz
+    geo:
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
+  - name: Centro de Cría de Cernícalo Primilla de DEMA
+    website:
+    email: demagrupo@wanadoo.es
+    telephone: +34 924671752 / 678244414 / 647292776
+    type: rehab center
+    city: Badajoz
+    geo:
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
+  - name: Centro de recuperación de fauna silvestre "La Fombera"
+    website:
+    email: centro.faunasilvestre@larioja.org
+    telephone: +34 941260405 / 699982277
+    type: rehab center
+    city: Logroño
+    geo:
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
+  - name: Coordinación de la Red Nacional de CREAs
+    website:
+    email: imolina@egmasa.es
+    telephone: +34 670945937 / 955 044766
+    type: rehab center
+    city: Sevilla
+    geo:
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
 rescue:
   - name: What to do if you find a pigeon
     link: https://www.pigeonrescue.org/faqs-2/what-to-do-if-you-find-a-pigeon-or-dove/

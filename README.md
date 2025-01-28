@@ -38,6 +38,18 @@ A curated list of rehab centers, avian veterinaries, sanctuaries and groups dedi
 | [Centro de Recuperación "El Chaparrillo"](None) | None | +34 926231400 | Ciudad Real |
 | [Centro de Recuperación "El Ardal"](None) | None | +34 969178300 | Cuenca |
 | [Mini-Zoo municipal.](None) | None | +34 94921059 | Guadalajara |
+| [Centro de Recuperación de Animales Silvestres "Los Guindales"](None) | alaaleol@jcyl.es | +34 947461189 | Burgos |
+| [Centro de Recuperación de Especies Protegidas "Las Dunas"](None) | teresa.tarazona@sajcyl.es | +34 923296026 | Salamanca |
+| [Centro de Recuperación de Animales Salvajes "Los Lavaderos"](None) | cacharrocaccarel@jcyl.es | +34 921433340 | Segovia |
+| [Centro de Recuperación de Aves de Valladolid](None) | diepozma@jcyl.es | +34 983249862 | Valladolid |
+| [Centro de Recepción de Fauna de Avila](None) | nicolasgonzalez@auv.jcyl.es | +34 920355001 | Avila |
+| [Centro de Recepción de Fauna de Valsemana. León](None) | juan-jose.martinez@le.jcyl.es | +34 987694219 | Leon |
+| [Centro de Recuperación Fauna Silvestre de Zamora](None) | None | +34 980510361 | Zamora |
+| [Centro de Recuperación de Fauna Silvestre y Educación Ambiental "Los Hornos"](None) | crhornos@aym.juntaex.es | +34 900351858 / 927200170 / 927200218 | Caceres |
+| [Centro de Cría de Aguilucho Cenizo de AMUS](None) | amus100@hotmail.com | +34 924520428 | Badajoz |
+| [Centro de Cría de Cernícalo Primilla de DEMA](None) | demagrupo@wanadoo.es | +34 924671752 / 678244414 / 647292776 | Badajoz |
+| [Centro de recuperación de fauna silvestre "La Fombera"](None) | centro.faunasilvestre@larioja.org | +34 941260405 / 699982277 | Logroño |
+| [Coordinación de la Red Nacional de CREAs](None) | imolina@egmasa.es | +34 670945937 / 955 044766 | Sevilla |
 
 
 #### sanctuary

@@ -68,6 +68,7 @@ invalid_names = {
 # Regex pattern for extracting URLs
 url_pattern = re.compile(r"(https?://[^\s|]+|www\.[a-zA-Z0-9-]+\.[a-zA-Z]{2,})")
 email_pattern = re.compile(r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}")
+phone_pattern = re.compile(r"\b(?:\d{2,3}[ -]?){2,4}\d{2,4}\b")
 
 for div in divs:
     # Check if the div contains a <b> or <span> tag (Center Name)
@@ -92,7 +93,10 @@ for div in divs:
 
     # Check if the extracted name contains "centro de " or "centre de"
     if center_name_lower and (
-        "centro de " in center_name_lower or "centre de " in center_name_lower
+        "centro de " in center_name_lower
+        or "centre de " in center_name_lower
+        or "crea" in center_name_lower
+        or "crema" in center_name_lower
     ):
         # Avoid duplicates
         if center_name_lower not in seen_centers:
@@ -113,6 +117,15 @@ for div in divs:
 
                 # Remove email from details
                 clean_details = re.sub(email_pattern, "", clean_details).strip()
+
+                # Extract all phone numbers from details
+                phones = phone_pattern.findall(clean_details)
+                phone = (
+                    " / ".join(phones) if phones else None
+                )  # Join multiple numbers with a slash
+
+                # Remove phone numbers from details
+                clean_details = re.sub(phone_pattern, "", clean_details).strip()
 
                 # Extract the first city from details
                 words = clean_details.split()
@@ -135,6 +148,7 @@ for div in divs:
                         "Website": website,
                         "City": city,
                         "Email": email,
+                        "Phone": phone,
                         "Details": " | ".join(current_details),
                     }
                 )
@@ -169,6 +183,13 @@ if current_center and current_center.lower() not in seen_centers:
     # Remove email from details
     clean_details = re.sub(email_pattern, "", clean_details).strip()
 
+    # Extract all phone numbers from details
+    phones = phone_pattern.findall(clean_details)
+    phone = " / ".join(phones) if phones else None  # Join multiple numbers with a slash
+
+    # Remove phone numbers from details
+    clean_details = re.sub(phone_pattern, "", clean_details).strip()
+
     # Extract the first city from details
     words = clean_details.split(" | ")
     city = next(
@@ -185,6 +206,7 @@ if current_center and current_center.lower() not in seen_centers:
             "Website": website,
             "City": city,
             "Email": email,
+            "Phone": phone,
             "Details": clean_details,
         }
     )
@@ -192,7 +214,7 @@ if current_center and current_center.lower() not in seen_centers:
 print(rehab_centers)
 df = pd.DataFrame(rehab_centers)
 
-df = df[["Center Name", "Website", "City", "Email", "Details"]]
+df = df[["Center Name", "Website", "City", "Email", "Phone", "Details"]]
 
 # Save to CSV (Optional)
 df.to_csv("src/rehabilitation_centers.csv", index=False)
