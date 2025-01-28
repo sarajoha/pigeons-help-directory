@@ -30,10 +30,10 @@ A curated list of rehab centers, avian veterinaries, sanctuaries and groups dedi
 {% for type, centers in centersByCountry.items() -%}
 #### {{type}}
 
-| center | city |
-| - | - |
+| center | email | phone | city |
+| - | - | - | - |
 {% for center in centers -%}
-| [{{center.name}}]({{center.website}}) | {{center.city}} |
+| [{{center.name}}]({{center.website}}) | {{center.email}} | {{center.telephone}} | {{center.city}} |
 {% endfor %}
 
 {% endfor %}

@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 from unidecode import unidecode
+import re
 
 # URL of the page to scrape
 url = "https://www.misamigaslaspalomas.com/2011/07/6-listado-de-centros-de-rehabilitacion.html"
@@ -56,9 +57,17 @@ spanish_cities = {
 
 # Initialize a list to store extracted data
 rehab_centers = []
+current_details = []
 seen_centers = set()
 current_center = None
-city_name = None
+invalid_names = {
+    "¿Qué es un centro de recuperación?",
+    "¿Cómo funcionan los centros de recuperación?",  # Add any other common invalid names here
+}
+
+# Regex pattern for extracting URLs
+url_pattern = re.compile(r"(https?://[^\s|]+|www\.[a-zA-Z0-9-]+\.[a-zA-Z]{2,})")
+email_pattern = re.compile(r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}")
 
 for div in divs:
     # Check if the div contains a <b> or <span> tag (Center Name)
@@ -77,6 +86,10 @@ for div in divs:
     else:
         center_name_lower = None
 
+    # Skip invalid center names
+    if center_name and center_name in invalid_names:
+        continue  # Skip this iteration
+
     # Check if the extracted name contains "centro de " or "centre de"
     if center_name_lower and (
         "centro de " in center_name_lower or "centre de " in center_name_lower
@@ -85,32 +98,101 @@ for div in divs:
         if center_name_lower not in seen_centers:
             # If there's a previously stored center, save it before moving to the next
             if current_center:
-                rehab_centers.append({"Center Name": current_center, "City": city_name})
+                details_text = " | ".join(current_details)
+
+                # Extract the first URL from details
+                urls = url_pattern.findall(details_text)
+                website = urls[0] if urls else None
+
+                # Remove URL from details
+                clean_details = re.sub(url_pattern, "", details_text).strip()
+
+                # Extract the first email from details
+                emails = email_pattern.findall(clean_details)
+                email = emails[0] if emails else None
+
+                # Remove email from details
+                clean_details = re.sub(email_pattern, "", clean_details).strip()
+
+                # Extract the first city from details
+                words = clean_details.split()
+                city = next(
+                    (
+                        word
+                        for word in words
+                        if unidecode(word.lower()) in spanish_cities
+                    ),
+                    None,
+                )
+
+                # Remove city from details
+                if city:
+                    clean_details = clean_details.replace(city, "").strip()
+
+                rehab_centers.append(
+                    {
+                        "Center Name": current_center,
+                        "Website": website,
+                        "City": city,
+                        "Email": email,
+                        "Details": " | ".join(current_details),
+                    }
+                )
 
             # Store the new center
             seen_centers.add(center_name_lower)  # Add to set to prevent duplicates
             current_center = center_name
-            city_name = None  # Reset city for the new center
+            current_details = []
 
         print(current_center)
-    # If we already have a center, look for the first meaningful city-like text
-    elif current_center and not city_name:
-        bold_tag = div.find("b")
-        text = bold_tag.get_text(strip=True) if bold_tag else ""
-        text_clean = unidecode(text.lower())  # Normalize text for comparison
-
-        # Validate if the extracted text is a known city
-        if text_clean in spanish_cities:
-            city_name = text  # Save original text version (not lowercased)
-        elif text and len(text.split()) < 5:  # Heuristic: city names are usually short
-            city_name = text
+    else:
+        # If we already have a center, collect details
+        text = div.get_text(strip=True)
+        if text:
+            current_details.append(text)
 
 # Save the last center
 if current_center and current_center.lower() not in seen_centers:
-    rehab_centers.append({"Center Name": current_center, "City": city_name})
+    details_text = " | ".join(current_details)
+
+    # Extract the first URL from details
+    urls = url_pattern.findall(details_text)
+    website = urls[0] if urls else None
+
+    # Remove URL from details
+    clean_details = re.sub(url_pattern, "", details_text).strip()
+
+    # Extract the first email from details
+    emails = email_pattern.findall(clean_details)
+    email = emails[0] if emails else None
+
+    # Remove email from details
+    clean_details = re.sub(email_pattern, "", clean_details).strip()
+
+    # Extract the first city from details
+    words = clean_details.split(" | ")
+    city = next(
+        (word for word in words if unidecode(word.lower()) in spanish_cities), None
+    )
+
+    # Remove city from details
+    if city:
+        clean_details = clean_details.replace(city, "").strip()
+
+    rehab_centers.append(
+        {
+            "Center Name": current_center,
+            "Website": website,
+            "City": city,
+            "Email": email,
+            "Details": clean_details,
+        }
+    )
 
 print(rehab_centers)
 df = pd.DataFrame(rehab_centers)
+
+df = df[["Center Name", "Website", "City", "Email", "Details"]]
 
 # Save to CSV (Optional)
 df.to_csv("rehabilitation_centers.csv", index=False)

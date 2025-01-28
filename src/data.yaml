@@ -5,14 +5,18 @@ professional_help_centers:
   # This is a template for vets, avian veterinaries and sanctuaries
   # - name: Name of the place to get professional help
   #   website: https://example.com/
-  #   location: City and Country where the sactuary is located
-  #   type: Vet, Rehab Center or Sanctuarie
+  #   email: bob@example.com
+  #   telephone: +32 999111222
+  #   city: City where the sactuary is located
+  #   type: Vet, Rehab Center or Sanctuary
   #   geo:
   #     - country: Country Name (see list below for spelling)
   #       lat: Latitude (see list below for format)
   #       long: Longitude
   - name: Santuario La Paloma Triste
     website: https://www.facebook.com/SantuarioLaPalomaTriste/?locale=es_ES
+    email: lapalomatriste@gmail.com
+    telephone: +34 617702269
     type: sanctuary
     city: Madrid
     geo:
@@ -21,16 +25,100 @@ professional_help_centers:
         long: -3.703790
   - name: Mis Amigas Las Palomas
     website: https://www.misamigaslaspalomas.com/2011/07/6-listado-de-centros-de-rehabilitacion.html
+    email: misamigaslaspalomas@hotmail.es
+    telephone:
     type: sanctuary
     city: Madrid
     geo:
       - country: Spain
         lat: 40.416775
         long: -3.703790
-- name: Centro de Recuperación de Fauna Silvestre de GREFA
-    website: https://www.facebook.com/SantuarioLaPalomaTriste/?locale=es_ES
-    type: sanctuary
+  - name: Centro de Recuperación de Fauna Silvestre de GREFA
+    website: http://www.grefa.org/
+    email: grefa@grefa.org
+    telephone: +34 916387550
+    type: rehab center
     city: Madrid
+    geo:
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
+  - name: BRINZAL Centro de Recuperación de Rapaces Nocturnas
+    website: http://www.brinzal.org
+    email: brinzal@brinzal.org
+    telephone: +34 914794565 / 670933240
+    type: rehab center
+    city: Madrid
+    geo:
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
+  - name: Centro de Recuperación de Especies Protegidas de Buitrago de Lozoya
+    website:
+    email: mmontijano@eresmas.com
+    telephone: +34 918680496
+    type: rehab center
+    city: Madrid
+    geo:
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
+  - name: Centro de Naturaleza y Recogida de Fauna Herida CAÑADA REAL
+    website:
+    email: pespan@eresmas.com
+    telephone: +34 918906980
+    type: rehab center
+    city: Madrid
+    geo:
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
+  - name: Centro de Estudios de Rapaces Ibéricas(CERI)
+    website:
+    email:
+    telephone: +34 925455004
+    type: rehab center
+    city: Toledo
+    geo:
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
+  - name: Centro de Recuperación
+    website:
+    email:
+    telephone: +34 967520062
+    type: rehab center
+    city: Albacete
+    geo:
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
+  - name: Centro de Recuperación "El Chaparrillo"
+    website:
+    email:
+    telephone: +34 926231400
+    type: rehab center
+    city: Ciudad Real
+    geo:
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
+  - name: Centro de Recuperación "El Ardal"
+    website:
+    email:
+    telephone: +34 969178300
+    type: rehab center
+    city: Cuenca
+    geo:
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
+  - name: Mini-Zoo municipal.
+    website:
+    email:
+    telephone: +34 94921059
+    type: rehab center
+    city: Guadalajara
     geo:
       - country: Spain
         lat: 40.416775

@@ -25,12 +25,27 @@ A curated list of rehab centers, avian veterinaries, sanctuaries and groups dedi
 - [Spain](#spain)
 ### Spain
 
+#### rehab center
+
+| center | email | phone | city |
+| - | - | - | - |
+| [Centro de Recuperación de Fauna Silvestre de GREFA](http://www.grefa.org/) | grefa@grefa.org | +34 916387550 | Madrid |
+| [BRINZAL Centro de Recuperación de Rapaces Nocturnas](http://www.brinzal.org) | brinzal@brinzal.org | +34 914794565 / 670933240 | Madrid |
+| [Centro de Recuperación de Especies Protegidas de Buitrago de Lozoya](None) | mmontijano@eresmas.com | +34 918680496 | Madrid |
+| [Centro de Naturaleza y Recogida de Fauna Herida CAÑADA REAL](None) | pespan@eresmas.com | +34 918906980 | Madrid |
+| [Centro de Estudios de Rapaces Ibéricas(CERI)](None) | None | +34 925455004 | Toledo |
+| [Centro de Recuperación](None) | None | +34 967520062 | Albacete |
+| [Centro de Recuperación "El Chaparrillo"](None) | None | +34 926231400 | Ciudad Real |
+| [Centro de Recuperación "El Ardal"](None) | None | +34 969178300 | Cuenca |
+| [Mini-Zoo municipal.](None) | None | +34 94921059 | Guadalajara |
+
+
 #### sanctuary
 
-| center | city |
-| - | - |
-| [Santuario La Paloma Triste](https://www.facebook.com/SantuarioLaPalomaTriste/?locale=es_ES) | Madrid |
-| [Mis Amigas Las Palomas](https://www.misamigaslaspalomas.com/2011/07/6-listado-de-centros-de-rehabilitacion.html) | Madrid |
+| center | email | phone | city |
+| - | - | - | - |
+| [Santuario La Paloma Triste](https://www.facebook.com/SantuarioLaPalomaTriste/?locale=es_ES) | lapalomatriste@gmail.com | +34 617702269 | Madrid |
+| [Mis Amigas Las Palomas](https://www.misamigaslaspalomas.com/2011/07/6-listado-de-centros-de-rehabilitacion.html) | misamigaslaspalomas@hotmail.es | None | Madrid |
 
 
 
