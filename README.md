@@ -50,6 +50,7 @@ A curated list of rehab centers, avian veterinaries, sanctuaries and groups dedi
 | [Centro de Cría de Cernícalo Primilla de DEMA](None) | demagrupo@wanadoo.es | +34 924671752 / 678244414 / 647292776 | Badajoz |
 | [Centro de recuperación de fauna silvestre "La Fombera"](None) | centro.faunasilvestre@larioja.org | +34 941260405 / 699982277 | Logroño |
 | [Coordinación de la Red Nacional de CREAs](None) | imolina@egmasa.es | +34 670945937 / 955 044766 | Sevilla |
+| [CREA Las Almohallas](None) | None | +34 950011150 | Almeria |
 
 
 #### sanctuary
