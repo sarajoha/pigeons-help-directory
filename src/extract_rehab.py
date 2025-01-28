@@ -108,14 +108,13 @@ def get_details(current_details):
 
 
 def extract_data():
-    # Initialize a list to store extracted data
     rehab_centers = []
     current_details = []
     seen_centers = set()
     current_center = None
     invalid_names = {
         "¿Qué es un centro de recuperación?",
-        "¿Cómo funcionan los centros de recuperación?",  # Add any other common invalid names here
+        "¿Cómo funcionan los centros de recuperación?",
     }
 
     divs = extract_divs(URL)
@@ -125,10 +124,10 @@ def extract_data():
         span_tag = div.find("span")
 
         center_text_bold = bold_tag.get_text(strip=True) if bold_tag else None
-        center_text_span = span_tag.get_text(strip=True) if span_tag else None
+        center_text_span = span_tag.get_text(" ", strip=True) if span_tag else None
 
-        # Choose the first available name (bold preferred over span)
-        center_name = center_text_bold or center_text_span
+        # Choose the first available name (span preferred over bold)
+        center_name = center_text_span or center_text_bold
 
         # Convert to lowercase for case-insensitive comparison
         if center_name:
@@ -178,7 +177,7 @@ def extract_data():
 
     df = df[["Center Name", "Website", "City", "Email", "Phone", "Details"]]
 
-    # Save to CSV (Optional)
+    # Save to CSV
     df.to_csv("rehabilitation_centers.csv", index=False)
 
     print("Data extracted and saved successfully!")
