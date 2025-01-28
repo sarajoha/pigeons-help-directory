@@ -195,6 +195,6 @@ df = pd.DataFrame(rehab_centers)
 df = df[["Center Name", "Website", "City", "Email", "Details"]]
 
 # Save to CSV (Optional)
-df.to_csv("rehabilitation_centers.csv", index=False)
+df.to_csv("src/rehabilitation_centers.csv", index=False)
 
 print("Data extracted and saved successfully!")
