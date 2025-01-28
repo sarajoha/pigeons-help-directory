@@ -243,6 +243,16 @@ professional_help_centers:
       - country: Spain
         lat: 40.416775
         long: -3.703790
+  - name: CREA Las Almohallas
+    website:
+    email:
+    telephone: +34 950011150
+    type: rehab center
+    city: Almeria
+    geo:
+      - country: Spain
+        lat: 40.416775
+        long: -3.703790
 rescue:
   - name: What to do if you find a pigeon
     link: https://www.pigeonrescue.org/faqs-2/what-to-do-if-you-find-a-pigeon-or-dove/
